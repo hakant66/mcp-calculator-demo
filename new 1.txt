@@ -1,0 +1,1 @@
+curl -s -X POST ^   -H "Content-Type: application/json" ^   -H "Accept: application/json, text/event-stream" ^   -H "MCP-Session-Id: b15b8fbb2e0b4b40ab7c0c11b0b82f44" ^   -d "{\"jsonrpc\":\"2.0\",\"method\":\"notifications/initialized\",\"params\":null}" ^   http://127.0.0.1:8000/mcp
