@@ -1,0 +1,26 @@
+# --- Core MCP server ---
+fastmcp                 # Minimal framework for building MCP servers
+fastapi                 # Useful if your server exposes HTTP endpoints
+uvicorn[standard]       # ASGI server to run FastAPI apps
+pydantic>=2             # Data validation / schemas for tool inputs/outputs
+python-dotenv           # Load env vars from .env during local dev
+
+# --- Optional: HTTP clients / utilities ---
+httpx                   # Async HTTP client (call external APIs from your tools)
+tenacity                # Robust retries around flaky network calls
+
+# --- Optional: Logging/observability (pick what you like) ---
+rich                    # Pretty logs
+structlog               # Structured logging
+
+# --- Optional: Jupyter kernel (if you also test code in notebooks) ---
+ipykernel               # Lets you pick this venv as a Jupyter kernel in VS Code
+
+# --- Optional: RAG add-ons (uncomment if your MCP tools perform retrieval) ---
+# langchain-core
+# langchain-community
+# langchain-text-splitters
+# chromadb                 # simple local vector store   (OR)
+# qdrant-client            # Qdrant vector DB client
+# openai                   # For OpenAI embeddings/LLMs (set OPENAI_API_KEY)
+# google-generativeai      # For Gemini models (set GOOGLE_API_KEY)
