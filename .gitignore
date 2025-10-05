@@ -22,5 +22,9 @@ mcp_env/
 .DS_Store
 Thumbs.db
 
+# Secrets / local config
+.env
+*.env
+
 # Misc
 *.log
